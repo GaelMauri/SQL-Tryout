@@ -1,6 +1,6 @@
 /*
 What are the top 20 paying Data Analyst (and similar) jobs in the USA, 
-considering non-remote and remote, part-time positions and names? 
+considering non-remote and remote, part-time positions and their names? 
 */
 
 
