@@ -17,7 +17,8 @@ WITH skillid_to_salary AS (
     FROM job_postings_fact
     INNER JOIN skills_job_dim AS skills
         ON job_postings_fact.job_id = skills.job_id
-    WHERE job_title_short LIKE '%Data Analyst%' AND
+    WHERE 
+        job_title_short LIKE '%Data Analyst%' AND
         job_schedule_type LIKE '%Part%' AND
         job_work_from_home = FALSE AND
         salary_year_avg IS NOT NULL),
