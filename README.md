@@ -324,3 +324,60 @@ The bottom 10 demanded skills barely appear, as they focus on more **Uncommon La
 ---
 ### Question 4
 
+
+**Low Salary Bracket**:
+
+| **Skill**   | **Count** | **Rank** |
+|-------------|-----------|----------|
+| SQL         | 28        | 1        |
+| Python      | 20        | 2        |
+| SAS         | 16        | 3        |
+| R           | 14        | 4        |
+| Excel       | 13        | 5        |
+| Tableau     | 12        | 6        |
+| Power BI    | 11        | 7        |
+| AWS         | 8         | 8        |
+| Oracle      | 6         | 9        |
+| Azure       | 6         | 10       |
+
+
+
+**Standard Salary Bracket**:
+
+| **Skill**   | **Count** | **Rank** |
+|-------------|-----------|----------|
+| SAS         | 16        | 1        |
+| Python      | 16        | 2        |
+| SQL         | 13        | 3        |
+| Tableau     | 11        | 4        |
+| R           | 10        | 5        |
+| Power BI    | 6         | 6        |
+| Excel       | 5         | 7        |
+| Azure       | 4         | 8        |
+| C           | 4         | 9        |
+| Spark       | 3         | 10       |
+
+
+
+**High Salary Bracket**:
+
+| **Skill**   | **Count** | **Rank** |
+|-------------|-----------|----------|
+| Power BI    | 2         | 1        |
+| Scala       | 2         | 2        |
+| Spark       | 2         | 3        |
+| SAS         | 2         | 4        |
+| SQL         | 2         | 5        |
+| Tableau     | 2         | 6        |
+| R           | 2         | 7        |
+| Python      | 2         | 8        |
+| Excel       | 1         | 9        |
+| Oracle      | 1         | 10       |
+
+---
+
+From these tables it can be seen that there's a clear resemblance between the **low** and **standard** brackets:
+The most demanded skills in both are **SQL**, **Python**, and **Excel**, followed by **R**, that focuses on statistical analysis skills. These analyses are demanded to be showcased by programmes such as **Tableau** and **Power BI**, therefore concluding that in the Low and Standard brackets there's a relevancy of the most core data skills, and its visualization.
+
+On the other hand, there's many more differences between these brackets and the **High** bracket, which requires much more specialized expertise shown in demand for **Scala** or **Spark** instead of Python or R, used on processing huge amounts of data and on really peculiar scenarios. The dominant demand of **Power BI** indicates the significant use of more advanced data visualization techniques when paired with Scala or Spark. It is also noticeable that there are less observations in the High bracket, as it treats with more niche and abnormal cases, that are therefore less know, and better rewarded in turn. 
+
