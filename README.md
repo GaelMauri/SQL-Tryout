@@ -1,8 +1,8 @@
 # INTRODUCTION
 
-This repository was done independent of any academic or occupational obligation, but rather as way to learn the basics and intermediate concepts of SQL, and show my capabilities for managing databases, data manipulation, code optimization and desired outputs. The knowledge and steps taken were following the course from Luke Barousse, found [here](https://youtu.be/7mz73uXD9DA?si=PoDWVRJG80J5GiFi). 
+This repository was done independent of any academic or occupational obligation, but rather as way to learn the basics and intermediate concepts of SQL, and show my capabilities for managing databases, data manipulation, code optimization and desired outputs. The knowledge and steps were taken by following the course from Luke Barousse, found [here](https://youtu.be/7mz73uXD9DA?si=PoDWVRJG80J5GiFi). 
 
-This project is structured around 4 questions, each in their own query, that challenge and back up the extent of my knowledge on the tools that helped me complete the tasks in question. These 4 questions, shown in the Queries and Code section, are composed to get progressively more complex.
+This project is structured around 4 questions, each in their own query, that challenge and back up the extent of my knowledge on the tools that helped me complete the tasks in question. These 4 questions, shown in the "Queries and Code" section, are composed to get progressively more complex.
 
  
 
@@ -13,7 +13,7 @@ This project is structured around 4 questions, each in their own query, that cha
 - **CSV Datasets**: where all the data inputted comes from and, therefore, where all the output source from. The csv files of the "Material" section have been provided by Luke Barousse, while the files in the "Results and Insights" section have been created from the queries. 
 - **PostgreSQL**: the relational database management system of my choice, based on the quantity of systems demanded by Data Analyst jobs in Denmark, coming out on top 2 out of the existing database management system, also recommended by the course. Source from [this page](https://datanerd.tech/).
 - **VSCode**: my go-to code editor, due to its high customizability, extensions, and language support, boosting my efficiency when running these queries. 
-- **GitHub**: in order to store these project, upload the its results, and periodically build a sufficient portfolio, I used GitHub to control the progress and updates of this repository. 
+- **GitHub**: in order to store these project, upload its results, and periodically build a sufficient portfolio, I used GitHub to control the progress and updates of this repository. 
 
 ### Datasets Used
 Across the code shown in the next section there are 4 datasets from where the data is sourced. These are:
@@ -24,7 +24,7 @@ Across the code shown in the next section there are 4 datasets from where the da
 
 ## QUERIES AND CODE
 ### Item Creation
-For database and dataset creation, plus storing data within these datasets, the .sql files found in the [material_loading folder](/material_loading/). The queries used are the following:
+The queries for database and dataset creation, plus storing data within these datasets, can be found in the .sql files inside the [material_loading folder](/material_loading/). The queries used are the following:
 
 *Database Creation*
 ```sql
@@ -248,7 +248,7 @@ WHERE rank <= 10
 
 The highest annual salary ($234000) is offered by **Walmart Global Tech** in **Sunnyvale, CA**; while the lowest annual salary ($115000) is offered by **Epik Solutions** in **Pleasant Hill, CA**.
 
-Taken a look at the whole group, the **average salary** offered for these specific jobs is of $151855, having an **expected deviation** of $36120 per job. 
+Taking a look at the whole group, the **average salary** offered for these specific jobs is of $151855, having an **expected deviation** of $36120 per job. 
 
 
 **2. The 5 Top Paying Companies Are**:
@@ -275,11 +275,11 @@ While not appearing as often, specialized skills like **Scala**, **Go**, and **D
 
 **4. Public vs. Private Sector Skills**
 
-   **Public companies** such as the U.S. Department of the Treasury and US Office of the Secretary of Defense often require certain skills like **Python**, **SAS**, and **C**; while **Private companies** like Walmart Global Tech and Booz Allen Hamilton expect a broader range of technical skills required.
+   **Public companies** such as the U.S. Department of the Treasury and US Office of the Secretary of Defense often require certain skills like **Python**, **SAS**, and **C**; while **private companies** like Walmart Global Tech and Booz Allen Hamilton expect a broader range of technical skills required.
 
 ---
 
-It is notable that the jobs are listed as **"Anywhere"**, indicating remote work opportunities, but not entirely remote, and are therefore kept in the output.
+It is notable that some jobs are listed as **"Anywhere"**, indicating remote work opportunities, but not entirely remote, and are therefore kept in the output.
 
 ---
 ### Question 3
