@@ -106,7 +106,7 @@ FROM 'C:\Users\Usuario\Documents\2nD Desktop\SQL Try\csv_files\skills_job_dim.cs
 WITH (FORMAT csv, HEADER true, DELIMITER ',', ENCODING 'UTF8');
 ```
 
-***The following 4 questions are answered using the queries found in the [question_queries folder](/question_queries/):***
+***The following 4 questions are answered using the queries found in the [question_queries folder](/question_queries/). Moreover, the output of the queries can be found in separate csv files in the zip folder inside the [sql_question_results folder](/sql_question_results/)***:
 ### Question 1
 What are the top 20 paying Data Analyst jobs in the USA, 
 considering in-person and remote, part-time positions and the names of the offering companies?
@@ -240,3 +240,4 @@ WHERE rank <= 10
 ```
 
 ## RESULTS AND INSIGHTS
+
