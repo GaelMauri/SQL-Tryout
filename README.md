@@ -136,7 +136,7 @@ Continuing from the previous question, what are the skills associated with each 
 ```sql
 WITH top20_jobs AS (
     SELECT
-        DENSE_RANK() OVER (ORDER BY salary_year_avg DESC) AS top20,
+        DENSE_RANK() OVER (ORDER BY salary_year_avg DESC, job_location DESC) AS top20,
         salary_year_avg,
         job_location,
         job_schedule_type,
@@ -240,4 +240,87 @@ WHERE rank <= 10
 ```
 
 ## RESULTS AND INSIGHTS
+
+### Question 1 and 2
+
+
+**1. Salary Distribution**:
+
+The highest annual salary ($234000) is offered by **Walmart Global Tech** in **Sunnyvale, CA**; while the lowest annual salary ($115000) is offered by **Epik Solutions** in **Pleasant Hill, CA**.
+
+Taken a look at the whole group, the **average salary** offered for these specific jobs is of $151855, having an **expected deviation** of $36120 per job. 
+
+
+**2. The 5 Top Paying Companies Are**:
+
+   | **Rank** | **Salary**   | **Location**         | **Company**                          | **Skills**                                                                 |
+|----------|--------------|----------------------|--------------------------------------|----------------------------------------------------------------------------|
+| 1        | $234,000     | Sunnyvale, CA        | Walmart Global Tech                  | Spark, Matplotlib, Excel, Tableau, Power BI, SAS, SQL, Python, NoSQL, Scala, R, Oracle |
+| 2        | $202,000     | California           | Walmart Global Tech                  | Tableau, SQL, Python, Scala, Spark, R, Power BI                            |
+| 3        | $193,048     | St Charles, MO       | U.S. Department of the Treasury      | Python, SAS, C, R                                                          |
+| 4        | $193,048     | Fairview, PA         | U.S. Department of the Treasury      | R, SAS, C, Python                                                          |
+| 5        | $170,000     | Arlington, VA        | US Office of the Secretary of Defense| C, Terminal, Go                                                            |
+
+
+**3. The Top Demanded Skills Are**:
+
+- **Python**
+- **SQL**
+- **R**
+- **Tableau**
+- **Power BI**
+
+While not appearing as often, specialized skills like **Scala**, **Go**, and **Databricks** are particularly in demand for higher-paying roles.
+
+
+**4. Public vs. Private Sector Skills**
+
+   **Public companies** such as the U.S. Department of the Treasury and US Office of the Secretary of Defense often require certain skills like **Python**, **SAS**, and **C**; while **Private companies** like Walmart Global Tech and Booz Allen Hamilton expect a broader range of technical skills required.
+
+---
+
+It is notable that the jobs are listed as **"Anywhere"**, indicating remote work opportunities, but not entirely remote, and are therefore kept in the output.
+
+---
+### Question 3
+
+**1. The 10 Top Demanded Skills Are**:
+
+
+| **Skill**   | **Count** |
+|-------------|-----------|
+| SQL         | 379       |
+| Python      | 289       |
+| Excel       | 229       |
+| Power BI    | 200       |
+| Tableau     | 156       |
+| R           | 129       |
+| SAS         | 124       |
+| SAP         | 91        |
+| PowerPoint  | 53        |
+| VBA         | 51        |
+
+The top 10 demanded skills focus on **Data Manipulation** (SQL) and **Automation** (Python), its **Visualization** (Power BI) and its **Presentation** (PowerPoint).
+
+
+---
+**The Bottom 10 Demanded Skills Are**:
+
+| **Skill**       | **Count** |
+|-----------------|-----------|
+| PowerShell      | 1         |
+| Splunk          | 1         |
+| Spreadsheet     | 1         |
+| Perl            | 1         |
+| Pascal          | 1         |
+| Notion          | 1         |
+| SQLite          | 1         |
+| Node.js         | 1         |
+| SSRS            | 1         |
+| Assembly        | 1         |
+
+The bottom 10 demanded skills barely appear, as they focus on more **Uncommon Languages** (Pascal), **Starting/Basic Versions** of others skills (SQLite) and **Specialized Tools** (Splunk).
+
+---
+### Question 4
 

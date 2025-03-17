@@ -4,7 +4,7 @@ Continuing from the previous question, what are the skills associated with each 
 
 WITH top20_jobs AS (
     SELECT
-        DENSE_RANK() OVER (ORDER BY salary_year_avg DESC) AS top20,
+        DENSE_RANK() OVER (ORDER BY salary_year_avg DESC, job_location DESC) AS top20,
         salary_year_avg,
         job_location,
         job_schedule_type,

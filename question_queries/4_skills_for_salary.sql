@@ -42,30 +42,187 @@ WHERE rank <= 10
 ;
 
 /*
-Insights (from AI):
-1. Most Demanded Skills Across All Brackets
-SQL and Python are consistently in the top 3 across all salary brackets, indicating their universal importance for Data Analysts.
-SAS is also highly demanded, especially in the Standard and Low brackets.
-
-2. Low Salary Bracket:
-Top Skills: SQL (28), Python (20), SAS (16), R (14), Excel (13).
-Foundational skills like SQL, Python, and Excel dominate this bracket, suggesting that entry-level or junior roles focus on core data manipulation and analysis.
-
-3. Standard Salary Bracket:
-Top Skills: SAS (16), Python (16), SQL (13), Tableau (11), R (10).
-In addition to core skills, tools like Tableau and Power BI become more important, indicating a focus on data visualization and reporting in mid-level roles.
-
-4. High Salary Bracket (≥ $200,000)
-Top Skills: Power BI (2), Scala (2), Spark (2), SAS (2), Python (2).
-High-paying roles demand advanced skills like Scala and Spark, which are associated with big data and distributed computing. Power BI remains relevant, but the skill counts are much lower, suggesting these roles are fewer in number or more specialized.
-
-5. Skill Distribution by Salary Bracket
-Low Bracket: Focuses on foundational skills (SQL, Python, Excel).
-Standard Bracket: Adds data visualization tools (Tableau, Power BI).
-High Bracket: Introduces advanced big data tools (Scala, Spark).
-
-6. Niche Skills
-Scala and Spark appear only in the High bracket, indicating their association with senior or specialized roles.
-Excel is present in all brackets but becomes less prominent in the High bracket.
+Results:
+[
+  {
+    "brackets": "Standard",
+    "skills": "sas",
+    "skill_count": "16",
+    "rank": "1"
+  },
+  {
+    "brackets": "Standard",
+    "skills": "python",
+    "skill_count": "16",
+    "rank": "2"
+  },
+  {
+    "brackets": "Standard",
+    "skills": "sql",
+    "skill_count": "13",
+    "rank": "3"
+  },
+  {
+    "brackets": "Standard",
+    "skills": "tableau",
+    "skill_count": "11",
+    "rank": "4"
+  },
+  {
+    "brackets": "Standard",
+    "skills": "r",
+    "skill_count": "10",
+    "rank": "5"
+  },
+  {
+    "brackets": "Standard",
+    "skills": "power bi",
+    "skill_count": "6",
+    "rank": "6"
+  },
+  {
+    "brackets": "Standard",
+    "skills": "excel",
+    "skill_count": "5",
+    "rank": "7"
+  },
+  {
+    "brackets": "Standard",
+    "skills": "azure",
+    "skill_count": "4",
+    "rank": "8"
+  },
+  {
+    "brackets": "Standard",
+    "skills": "c",
+    "skill_count": "4",
+    "rank": "9"
+  },
+  {
+    "brackets": "Standard",
+    "skills": "spark",
+    "skill_count": "3",
+    "rank": "10"
+  },
+  {
+    "brackets": "Low",
+    "skills": "sql",
+    "skill_count": "28",
+    "rank": "1"
+  },
+  {
+    "brackets": "Low",
+    "skills": "python",
+    "skill_count": "20",
+    "rank": "2"
+  },
+  {
+    "brackets": "Low",
+    "skills": "sas",
+    "skill_count": "16",
+    "rank": "3"
+  },
+  {
+    "brackets": "Low",
+    "skills": "r",
+    "skill_count": "14",
+    "rank": "4"
+  },
+  {
+    "brackets": "Low",
+    "skills": "excel",
+    "skill_count": "13",
+    "rank": "5"
+  },
+  {
+    "brackets": "Low",
+    "skills": "tableau",
+    "skill_count": "12",
+    "rank": "6"
+  },
+  {
+    "brackets": "Low",
+    "skills": "power bi",
+    "skill_count": "11",
+    "rank": "7"
+  },
+  {
+    "brackets": "Low",
+    "skills": "aws",
+    "skill_count": "8",
+    "rank": "8"
+  },
+  {
+    "brackets": "Low",
+    "skills": "oracle",
+    "skill_count": "6",
+    "rank": "9"
+  },
+  {
+    "brackets": "Low",
+    "skills": "azure",
+    "skill_count": "6",
+    "rank": "10"
+  },
+  {
+    "brackets": "High",
+    "skills": "scala",
+    "skill_count": "2",
+    "rank": "2"
+  },
+  {
+    "brackets": "High",
+    "skills": "power bi",
+    "skill_count": "2",
+    "rank": "1"
+  },
+  {
+    "brackets": "High",
+    "skills": "sas",
+    "skill_count": "2",
+    "rank": "4"
+  },
+  {
+    "brackets": "High",
+    "skills": "spark",
+    "skill_count": "2",
+    "rank": "3"
+  },
+  {
+    "brackets": "High",
+    "skills": "python",
+    "skill_count": "2",
+    "rank": "8"
+  },
+  {
+    "brackets": "High",
+    "skills": "r",
+    "skill_count": "2",
+    "rank": "7"
+  },
+  {
+    "brackets": "High",
+    "skills": "tableau",
+    "skill_count": "2",
+    "rank": "6"
+  },
+  {
+    "brackets": "High",
+    "skills": "sql",
+    "skill_count": "2",
+    "rank": "5"
+  },
+  {
+    "brackets": "High",
+    "skills": "excel",
+    "skill_count": "1",
+    "rank": "9"
+  },
+  {
+    "brackets": "High",
+    "skills": "oracle",
+    "skill_count": "1",
+    "rank": "10"
+  }
+]
 */
- 
