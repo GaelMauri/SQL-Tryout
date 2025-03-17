@@ -1,5 +1,5 @@
 /*
-Continuing from the previous question, what are the skills associated with these top 20 jobs?
+Continuing from the previous question, what are the skills associated with each of these top 20 jobs?
 */
 
 WITH top20_jobs AS (

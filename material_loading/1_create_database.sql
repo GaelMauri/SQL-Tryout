@@ -1,3 +1,0 @@
-CREATE DATABASE sql1;
-
--- DROP DATABASE IF EXISTS sql_course;
