@@ -1,4 +1,4 @@
-# INTRODUCTIONs
+# INTRODUCTION
 
 This repository was done independent of any academic or occupational obligation, but rather as way to learn the basics and intermediate concepts of SQL, and show my capabilities for managing databases, data manipulation, code optimization and desired outputs. The knowledge and steps were taken by following the course from Luke Barousse, found [here](https://youtu.be/7mz73uXD9DA?si=PoDWVRJG80J5GiFi). 
 
