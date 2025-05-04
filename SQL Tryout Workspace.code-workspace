@@ -1,0 +1,49 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"sqltools.connections": [
+			{
+				"previewLimit": 50,
+				"server": "localhost",
+				"port": 5432,
+				"driver": "PostgreSQL",
+				"name": "Postgres Con",
+				"database": "postgres",
+				"username": "postgres"
+			},
+			{
+				"previewLimit": 50,
+				"server": "localhost",
+				"port": 5432,
+				"driver": "PostgreSQL",
+				"name": "SQL1 Con",
+				"database": "sql1",
+				"username": "postgres"
+			}
+		],
+		"workbench.colorCustomizations": {
+			"activityBar.activeBackground": "#001236",
+			"activityBar.background": "#001236",
+			"activityBar.foreground": "#e7e7e7",
+			"activityBar.inactiveForeground": "#e7e7e799",
+			"activityBarBadge.background": "#9f0035",
+			"activityBarBadge.foreground": "#e7e7e7",
+			"commandCenter.border": "#e7e7e799",
+			"sash.hoverBorder": "#001236",
+			"statusBar.background": "#000103",
+			"statusBar.foreground": "#e7e7e7",
+			"statusBarItem.hoverBackground": "#001236",
+			"statusBarItem.remoteBackground": "#000103",
+			"statusBarItem.remoteForeground": "#e7e7e7",
+			"titleBar.activeBackground": "#000103",
+			"titleBar.activeForeground": "#e7e7e7",
+			"titleBar.inactiveBackground": "#00010399",
+			"titleBar.inactiveForeground": "#e7e7e799"
+		},
+		"peacock.color": "#000103"
+	}
+}

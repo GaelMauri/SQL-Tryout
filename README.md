@@ -108,11 +108,11 @@ WITH (FORMAT csv, HEADER true, DELIMITER ',', ENCODING 'UTF8');
 
 ***The following 4 questions are answered using the queries found in the [question_queries folder](/question_queries/). Moreover, the output of the queries can be found in separate csv files in the zip folder inside the [sql_question_results folder](/sql_question_results/)***:
 ### Question 1
-What are the top 20 paying Data Analyst jobs in the USA, 
-considering in-person and remote, part-time positions and the names of the offering companies?
+What are the top 20 paying Data Analyst (and similar) jobs in the USA, 
+considering in-person and remote, part-time positions, no NULL values in the kills of these positions and the names of the offering companies? 
 
 ```sql
-SELECT
+SELECT DISTINCT
     salary_year_avg,
     job_location,
     job_schedule_type,
@@ -120,15 +120,21 @@ SELECT
 FROM job_postings_fact
 LEFT JOIN company_dim AS company
     ON job_postings_fact.company_id = company.company_id
+LEFT JOIN skills_job_dim AS skills_num
+    ON job_postings_fact.job_id = skills_num.job_id
+LEFT JOIN skills_dim AS skills
+    ON skills_num.skill_id = skills.skill_id
 WHERE 
     job_title_short LIKE '%Data Analyst%' AND
     search_location LIKE '%United States%' AND
     job_schedule_type LIKE '%Part%' AND
-    salary_year_avg IS NOT NULL
+    salary_year_avg IS NOT NULL AND
+    skills IS NOT NULL
 ORDER BY
     salary_year_avg DESC
 LIMIT 20
 ;
+
 ```
 
 ### Question 2
@@ -196,7 +202,7 @@ ORDER BY
 ```
 
 ### Question 4:
-What are the top 10 skills demanded in Data Analyst jobs by salary brackets, considering non-remote, part-time positions, and NULL values?
+What are the top 10 skills demanded in Data Analyst jobs by salary brackets, considering non-remote, part-time positions, and no NULL values for the salary brackets?
 
 The salary brackets are defined as follows:
 - Low: x <= 100000
@@ -248,7 +254,7 @@ WHERE rank <= 10
 
 The highest annual salary ($234000) is offered by **Walmart Global Tech** in **Sunnyvale, CA**; while the lowest annual salary ($115000) is offered by **Epik Solutions** in **Pleasant Hill, CA**.
 
-Taking a look at the whole group, the **average salary** offered for these specific jobs is of $151855, having an **expected deviation** of $36120 per job. 
+Taking a look at the whole group, the **average salary** offered for these specific jobs is of $15137, having an **expected deviation** of $38,252 per job. 
 
 
 **2. The 5 Top Paying Companies Are**:
@@ -264,18 +270,18 @@ Taking a look at the whole group, the **average salary** offered for these speci
 
 **3. The Top Demanded Skills Are**:
 
-- **Python**
-- **SQL**
-- **R**
-- **Tableau**
-- **Power BI**
+- **Python** (18/20 jobs)
+- **SQL** (17/20)
+- **SAS** (14/20)
+- **Tableau** (12/20)
+- **R** (11/20)
 
-While not appearing as often, specialized skills like **Scala**, **Go**, and **Databricks** are particularly in demand for higher-paying roles.
+While not appearing as often, specialized skills like **Scala**, **Spark**, and **Power BI** are particularly in demand for higher-paying roles.
 
 
 **4. Public vs. Private Sector Skills**
 
-   **Public companies** such as the U.S. Department of the Treasury and US Office of the Secretary of Defense often require certain skills like **Python**, **SAS**, and **C**; while **private companies** like Walmart Global Tech and Booz Allen Hamilton expect a broader range of technical skills required.
+   **Public companies** such as the U.S. Department of the Treasury and US Office of the Secretary of Defense often require certain skills like **Python**, **NoSQL**, and **Power BI**; while **private companies** like Walmart Global Tech and Booz Allen Hamilton expect a broader range of technical skills required.
 
 ---
 

@@ -1,9 +1,9 @@
 /*
 What are the top 20 paying Data Analyst (and similar) jobs in the USA, 
-considering in-person and remote, part-time positions and the names of the offering companies? 
+considering in-person and remote, part-time positions, no NULL values in the kills of these positions and the names of the offering companies? 
 */
 
-SELECT
+SELECT DISTINCT
     salary_year_avg,
     job_location,
     job_schedule_type,
@@ -11,11 +11,16 @@ SELECT
 FROM job_postings_fact
 LEFT JOIN company_dim AS company
     ON job_postings_fact.company_id = company.company_id
+LEFT JOIN skills_job_dim AS skills_num
+    ON job_postings_fact.job_id = skills_num.job_id
+LEFT JOIN skills_dim AS skills
+    ON skills_num.skill_id = skills.skill_id
 WHERE 
     job_title_short LIKE '%Data Analyst%' AND
     search_location LIKE '%United States%' AND
     job_schedule_type LIKE '%Part%' AND
-    salary_year_avg IS NOT NULL
+    salary_year_avg IS NOT NULL AND
+    skills IS NOT NULL
 ORDER BY
     salary_year_avg DESC
 LIMIT 20

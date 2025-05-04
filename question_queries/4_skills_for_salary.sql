@@ -1,5 +1,5 @@
 /*
-What are the top 10 skills demanded in Data Analyst jobs by salary brackets, considering non-remote, part-time positions, and NULL values?
+What are the top 10 skills demanded in Data Analyst jobs by salary brackets, considering non-remote, part-time positions, and no NULL values for the salary brackets?
 The salary brackets are defined as follows:
     - Low: x <= 100000
     - Standard: 100000 < x <200000
