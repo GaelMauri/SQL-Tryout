@@ -254,7 +254,7 @@ WHERE rank <= 10
 
 The highest annual salary ($234000) is offered by **Walmart Global Tech** in **Sunnyvale, CA**; while the lowest annual salary ($115000) is offered by **Epik Solutions** in **Pleasant Hill, CA**.
 
-Taking a look at the whole group, the **average salary** offered for these specific jobs is of $15137, having an **expected deviation** of $38,252 per job. 
+Taking a look at the whole group, the **average salary** offered for these specific jobs is of $148000, having an **expected deviation** of $38,252 per job. 
 
 
 **2. The 5 Top Paying Companies Are**:
